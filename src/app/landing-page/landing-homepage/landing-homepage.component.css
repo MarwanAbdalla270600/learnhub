@@ -1,7 +1,6 @@
 .landing-page {
     color: var(--light-text-color);
     height: 100vh;
-    background-color: var(--dark-bg-color);
 
 
     .header {
@@ -13,6 +12,11 @@
         .logo {
             font-size: var(--font-logo-size);
         }
+
+    }
+
+    .hero-section {
+        width: 100%;
 
     }
 

@@ -16,6 +16,7 @@
 }
 
 body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
     font-family: 'Oswald';
     font-size: var(--font-standart-size);
 

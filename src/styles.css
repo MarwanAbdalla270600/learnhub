@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Oswald';
+    src: url('assets/fonts/Oswald/static/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+
+    --dark-bg-color: white;
+    --light-text-color: black;
+
+    --font-standart-size: 18px;
+    --font-logo-size: 24px
+}
+
+body {
+    font-family: 'Oswald';
+    font-size: var(--font-standart-size);
+
+    a {
+        cursor: pointer;
+    }
+}

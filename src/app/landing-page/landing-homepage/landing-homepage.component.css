@@ -1,0 +1,33 @@
+.landing-page {
+    color: var(--light-text-color);
+    height: 100vh;
+    background-color: var(--dark-bg-color);
+
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+
+        .logo {
+            font-size: var(--font-logo-size);
+        }
+
+    }
+
+    .footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation {
+        a {
+            margin: 0 10px 0 10px;
+        }
+    }
+}

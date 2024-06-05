@@ -1,0 +1,27 @@
+<div class="landing-page">
+    <header class="header">
+
+        <div class="logo">
+            {{logo}}
+        </div>
+
+        <nav class="navigation">
+            @for (item of headerNavLinks; track $index) {
+            <a>{{item.name}}</a>
+            }
+
+        </nav>
+    </header>
+
+
+
+    <footer class="footer">
+        <nav class="navigation">
+            @for (item of footerNavLinks; track $index) {
+            <a>{{item.name}}</a>
+            }
+        </nav>
+
+    </footer>
+
+</div>

@@ -1,0 +1,26 @@
+.card {
+    border: 0px;
+    padding: 0px;
+    background: #ff7e5f;
+    border-radius: 20px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Box shadow */
+    transition: box-shadow 0.3s ease;
+    /* Smooth shadow transition */
+
+
+    img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;/
+    }
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Shadow on hover */
+}

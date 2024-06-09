@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+:root {
+
+    --dark-bg-color: white;
+    --light-text-color: white;
+    --text-headline-color: white;
+    --text-paragraph-color: lightgray;
+    --text-secondary-color: rgb(255 117 211);
+    --text-third-color: #16F8B6;
+    --button-gradient-color: linear-gradient(90deg, #FF3CAC 0%, #784BA0 50%);
+
+
+
+    --font-standart-size: 18px;
+    --font-logo-size: 24px
+}
+
+body {
+    background-color: #0D1224;
+    font-family: 'Montserrat';
+    font-size: var(--font-standart-size);
+
+    a {
+        cursor: pointer;
+    }
+}
+
+
+/* utility classes */
+.sn-c {
+    color: var(--text-secondary-color);
+}
+
+.th-c {
+    color: var(--text-third-color);
+}
+
+.p-c {
+    color: var(--text-paragraph-color);
+}

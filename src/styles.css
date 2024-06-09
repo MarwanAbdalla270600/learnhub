@@ -5,10 +5,8 @@
     font-style: normal;
 }
 
-
-
+/* Variables */
 :root {
-
     --dark-bg-color: white;
     --light-text-color: white;
     --text-headline-color: white;
@@ -16,9 +14,6 @@
     --text-secondary-color: rgb(255 117 211);
     --text-third-color: #16F8B6;
     --button-gradient-color: linear-gradient(90deg, #FF3CAC 0%, #784BA0 50%);
-
-
-
     --font-standart-size: 18px;
     --font-logo-size: 24px
 }

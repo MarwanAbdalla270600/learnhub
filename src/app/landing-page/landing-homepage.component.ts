@@ -1,7 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { Course } from '../../general/models/course-card';
-import { CourseCardComponent } from '../../general/components/course-card/course-card.component';
-import { CourseService } from '../../general/services/course.service';
+import { Course } from '../general/models/course-card';
+import { CourseCardComponent } from '../general/components/course-card/course-card.component';
+import { CourseService } from '../general/services/course.service';
 import { Observable, map } from 'rxjs';
 import { CommonModule } from '@angular/common';
 

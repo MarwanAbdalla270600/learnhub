@@ -1,8 +1,14 @@
 <div class="card">
-
     <img [src]="data.imgUrl">
-    <h4>{{data.title}}</h4>
-    <p>{{data.description}}</p>
-    <span>{{data.price}}</span>
-    <span>{{data.duration}}</span>
+    <div class="content">
+        <div class="title-row">
+            <span class="bold title">{{data.title}}</span>
+            <span class="duration">{{data.duration}}h</span>
+        </div>
+        <br>
+
+        <p class="p-c">{{data.description}}</p>
+        <span class="bold">${{data.price}}</span>
+    </div>
+
 </div>

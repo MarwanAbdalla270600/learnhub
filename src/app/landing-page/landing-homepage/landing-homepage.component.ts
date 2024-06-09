@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
-import { CourseCard } from '../../general/models/course-card';
+import { Component, OnInit, inject } from '@angular/core';
+import { Course } from '../../general/models/course-card';
 import { CourseCardComponent } from '../../general/components/course-card/course-card.component';
+import { CourseService } from '../../general/services/course.service';
+import { Observable, map } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 interface Navlink {
   name: string,
@@ -10,11 +13,18 @@ interface Navlink {
 @Component({
   selector: 'app-landing-homepage',
   standalone: true,
-  imports: [CourseCardComponent],
+  imports: [CourseCardComponent, CommonModule],
   templateUrl: './landing-homepage.component.html',
   styleUrl: './landing-homepage.component.css'
 })
-export class LandingHomepageComponent {
+export class LandingHomepageComponent implements OnInit {
+ 
+
+  private readonly courseService = inject(CourseService);
+  
+  public courses$: Observable<Course[]> = this.courseService.getAllCourses().pipe(
+    map(courses => courses.slice(-6)) // Get the last 6 elements
+  );
 
   public logo: string = 'learnhub';
 
@@ -48,55 +58,7 @@ export class LandingHomepageComponent {
     }
   ]
 
-  public courses: CourseCard[] = [
-    {
-      imgUrl: 'assets/images/courses/warehouse.jpg',
-      title: 'Complete Warehouse Course',
-      description: 'Become the best coder you can be with unlimited access to all the existing and future courses',
-      duration: 20,
-      price: 15
-    },
-    {
-      imgUrl: 'assets/images/courses/warehouse.jpg',
-      title: 'Complete Warehouse Course',
-      description: 'Become the best coder you can be with unlimited access to all the existing and future courses',
-      duration: 20,
-      price: 15
-    },
-    {
-      imgUrl: 'assets/images/courses/warehouse.jpg',
-      title: 'Complete Warehouse Course',
-      description: 'Become the best coder you can be with unlimited access to all the existing and future courses',
-      duration: 20,
-      price: 15
-    },
-    {
-      imgUrl: 'assets/images/courses/warehouse.jpg',
-      title: 'Complete Warehouse Course',
-      description: 'Become the best coder you can be with unlimited access to all the existing and future courses',
-      duration: 20,
-      price: 15
-    },
-    {
-      imgUrl: 'assets/images/courses/warehouse.jpg',
-      title: 'Complete Warehouse Course',
-      description: 'Become the best coder you can be with unlimited access to all the existing and future courses',
-      duration: 20,
-      price: 15
-    },
-    {
-      imgUrl: 'assets/images/courses/warehouse.jpg',
-      title: 'Complete Warehouse Course',
-      description: 'Become the best coder you can be with unlimited access to all the existing and future courses',
-      duration: 20,
-      price: 15
-    },
-    {
-      imgUrl: 'assets/images/courses/warehouse.jpg',
-      title: 'Complete Warehouse Course',
-      description: 'Become the best coder you can be with unlimited access to all the existing and future courses',
-      duration: 20,
-      price: 15
-    }
-  ]
+  ngOnInit(): void {
+    this.courses$.subscribe(x=>console.log(x));
+  }
 }

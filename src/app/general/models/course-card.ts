@@ -1,4 +1,4 @@
-export interface CourseCard {
+export interface Course {
     imgUrl: string,
     title: string;
     description: string;

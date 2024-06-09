@@ -1,13 +1,47 @@
 .card {
+    cursor: pointer;
+    color: var(--light-text-color);
     border: 0px;
     padding: 0px;
-    background: #ff7e5f;
+    background: #12172A;
     border-radius: 20px;
     width: 300px;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.85rem;
+
+    .content {
+        padding: 30px 20px 30px 20px;
+
+        .title-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+
+            .title {
+                max-width: 220px;
+
+            }
+
+            .duration {
+                color: var(--text-secondary-color);
+                font-weight: bold;
+                background-color: #222222;
+                height: fit-content;
+                padding: 2px 8px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .bold {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
     /* Box shadow */
     transition: box-shadow 0.3s ease;
     /* Smooth shadow transition */
@@ -15,7 +49,7 @@
 
     img {
         border-top-left-radius: 20px;
-        border-top-right-radius: 20px;/
+        border-top-right-radius: 20px;
     }
 
 }

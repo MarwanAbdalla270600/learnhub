@@ -3,7 +3,7 @@ import { CourseService } from '../general/services/course.service';
 import { CommonModule } from '@angular/common';
 import { CourseCardComponent } from '../general/components/course-card/course-card.component';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { Observable, combineLatest, distinctUntilChanged, filter, map, startWith, switchMap, tap } from 'rxjs';
+import { Observable, combineLatest, map, startWith, switchMap, tap } from 'rxjs';
 import { Course } from '../general/models/course-card';
 import { DropdownModule } from 'primeng/dropdown';
 import { ButtonModule } from 'primeng/button';
@@ -37,45 +37,32 @@ export class CoursePageComponent implements OnInit {
 
     this.filteredCourses$ = combineLatest([name$, sort$]).pipe(
       switchMap(([name, sort]) =>
-        this.courses$.pipe(map(courses =>
-          courses.filter(course => course.title.toLowerCase().includes(name.toLowerCase())).sort((a, b) => {
-            switch (sort) {
-              case 'Alphabet':
-                return a.title.localeCompare(b.title);
-              case 'Price':
-                return a.price - b.price;
-              case 'Duration':
-                return a.duration - b.duration;
-              default:
-                return 0; // Add a default case to handle unexpected sort values
-            }
-          })
-        ),
+        this.courses$.pipe(
+          map(courses => this.filterAndSortCourses(courses, name, sort))
         )
       )
-    )
-
-    this.filteredCourses$.subscribe();
-
-
-    /*this.filteredCourses$ = this.searchForm.get('name')!.valueChanges.pipe(
-      startWith(''),
-      distinctUntilChanged(),
-      switchMap((formControl) =>
-        this.courses$.pipe(
-          map(courses =>
-            courses.filter(course => course.title.toLowerCase().includes(formControl.toLowerCase()))
-          )
-        )
-      ),
-    )*/
-  }
-
-  sortCoursesAfterPrice() {
-    this.filteredCourses$ = this.filteredCourses$.pipe(
-      map(courses => courses.sort((a, b) => a.price - b.price))
     );
   }
+
+  private compareCourses(a: Course, b: Course, sort: string): number {
+    switch (sort) {
+      case 'Alphabet':
+        return a.title.localeCompare(b.title);
+      case 'Price':
+        return a.price - b.price;
+      case 'Duration':
+        return a.duration - b.duration;
+      default:
+        return 0;
+    }
+  }
+
+  private filterAndSortCourses(courses: Course[], name: string, sort: string): Course[] {
+    return courses
+      .filter(course => course.title.toLowerCase().includes(name.toLowerCase()))
+      .sort((a, b) => this.compareCourses(a, b, sort));
+  }
+
 
 
 }

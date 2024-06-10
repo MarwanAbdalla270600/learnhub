@@ -1,10 +1,4 @@
 .landing-page {
-    color: var(--light-text-color);
-    height: 100vh;
-    max-width: 2000px;
-    margin: 0 auto 0 auto;
-    padding: 0 50px 0 50px;
-
     .header {
         width: 100%;
         display: flex;

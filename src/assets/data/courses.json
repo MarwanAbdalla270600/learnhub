@@ -1,44 +1,212 @@
 [
   {
     "imgUrl": "assets/images/courses/warehouse.jpg",
-    "title": "Complete Warehouse Course",
-    "description": "Become the best coder you can be with unlimited access to all the existing and future courses",
+    "title": "Complete Warehouse Course 1",
+    "description": "Learn the fundamentals of warehouse management.",
     "duration": 20,
     "price": 15
   },
   {
     "imgUrl": "assets/images/courses/warehouse.jpg",
-    "title": "Complete Warehouse Course",
-    "description": "Become the best coder you can be with unlimited access to all the existing and future courses",
+    "title": "Advanced Warehouse Techniques 2",
+    "description": "Master advanced techniques for efficient warehouse operations.",
+    "duration": 25,
+    "price": 20
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Automation 3",
+    "description": "Automate your warehouse for maximum efficiency.",
+    "duration": 18,
+    "price": 22
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Inventory Management 4",
+    "description": "Effective strategies for inventory management.",
+    "duration": 15,
+    "price": 18
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Supply Chain Essentials 5",
+    "description": "Learn the essentials of supply chain management.",
+    "duration": 30,
+    "price": 25
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Safety 6",
+    "description": "Ensure safety in warehouse operations.",
+    "duration": 12,
+    "price": 10
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Logistics Management 7",
+    "description": "Optimize logistics for better performance.",
+    "duration": 22,
+    "price": 17
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Design 8",
+    "description": "Design your warehouse for optimal workflow.",
+    "duration": 18,
+    "price": 19
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Material Handling 9",
+    "description": "Learn effective material handling techniques.",
     "duration": 20,
+    "price": 14
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Supervisor Training 10",
+    "description": "Train to become an effective warehouse supervisor.",
+    "duration": 24,
+    "price": 23
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Layout Optimization 11",
+    "description": "Optimize warehouse layout for efficiency.",
+    "duration": 19,
+    "price": 16
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Software 12",
+    "description": "Implement and manage warehouse software systems.",
+    "duration": 21,
+    "price": 20
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Lean Warehouse Management 13",
+    "description": "Adopt lean principles for warehouse management.",
+    "duration": 16,
+    "price": 14
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Project Management 14",
+    "description": "Manage warehouse projects effectively.",
+    "duration": 23,
+    "price": 22
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Green Warehouse Practices 15",
+    "description": "Implement environmentally friendly practices in your warehouse.",
+    "duration": 18,
     "price": 15
   },
   {
     "imgUrl": "assets/images/courses/warehouse.jpg",
-    "title": "Complete Warehouse Course",
-    "description": "Become the best coder you can be with unlimited access to all the existing and future courses",
-    "duration": 20,
-    "price": 15
+    "title": "Warehouse Metrics and KPIs 16",
+    "description": "Measure and improve warehouse performance.",
+    "duration": 17,
+    "price": 18
   },
   {
     "imgUrl": "assets/images/courses/warehouse.jpg",
-    "title": "Complete Warehouse Course",
-    "description": "Become the best coder you can be with unlimited access to all the existing and future courses",
+    "title": "Cross-Docking Strategies 17",
+    "description": "Implement cross-docking to improve efficiency.",
     "duration": 20,
-    "price": 15
+    "price": 19
   },
   {
     "imgUrl": "assets/images/courses/warehouse.jpg",
-    "title": "Complete Warehouse Course",
-    "description": "Become the best coder you can be with unlimited access to all the existing and future courses",
-    "duration": 20,
-    "price": 15
+    "title": "Warehouse Risk Management 18",
+    "description": "Identify and manage risks in warehouse operations.",
+    "duration": 14,
+    "price": 13
   },
   {
     "imgUrl": "assets/images/courses/warehouse.jpg",
-    "title": "Complete Warehouse Course",
-    "description": "Become the best coder you can be with unlimited access to all the existing and future courses",
+    "title": "Global Warehouse Management 19",
+    "description": "Manage warehouses in a global context.",
+    "duration": 22,
+    "price": 24
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Operations 20",
+    "description": "Master the daily operations of a warehouse.",
+    "duration": 21,
+    "price": 21
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "E-Commerce Warehouse Management 21",
+    "description": "Manage warehouses for e-commerce operations.",
+    "duration": 19,
+    "price": 20
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Cold Storage Management 22",
+    "description": "Learn to manage cold storage facilities.",
+    "duration": 15,
+    "price": 18
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Troubleshooting 23",
+    "description": "Solve common problems in warehouse management.",
+    "duration": 16,
+    "price": 17
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Cost Reduction 24",
+    "description": "Strategies to reduce costs in warehouse operations.",
     "duration": 20,
-    "price": 15
+    "price": 19
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Reporting 25",
+    "description": "Create effective reports for warehouse performance.",
+    "duration": 13,
+    "price": 14
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Productivity 26",
+    "description": "Boost productivity in your warehouse.",
+    "duration": 18,
+    "price": 16
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Forklift Operations 27",
+    "description": "Learn safe and efficient forklift operations.",
+    "duration": 15,
+    "price": 13
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Data Analytics 28",
+    "description": "Use data analytics to improve warehouse operations.",
+    "duration": 22,
+    "price": 21
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Sustainability 29",
+    "description": "Implement sustainable practices in your warehouse.",
+    "duration": 19,
+    "price": 17
+  },
+  {
+    "imgUrl": "assets/images/courses/warehouse.jpg",
+    "title": "Warehouse Leadership 30",
+    "description": "Develop leadership skills for warehouse management.",
+    "duration": 24,
+    "price": 23
   }
 ]

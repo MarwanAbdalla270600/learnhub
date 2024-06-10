@@ -8,17 +8,17 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CourseService {
 
-  private readonly httpClient = inject(HttpClient);
+  private readonly http = inject(HttpClient);
   private readonly jsonUrl = 'assets/data/courses.json'
 
-  public readonly courses$ = this.httpClient.get<Course[]>(this.jsonUrl);
+  public readonly courses$ = this.http.get<Course[]>(this.jsonUrl);
 
   getAllCourses(): Observable<Course[]> {
-    return this.httpClient.get<Course[]>(this.jsonUrl);
+    return this.http.get<Course[]>(this.jsonUrl);
   }
 
   getCourseByName(name: string) {
-    
+
   }
 
 }

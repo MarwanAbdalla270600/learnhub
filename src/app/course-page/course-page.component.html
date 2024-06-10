@@ -1,0 +1,19 @@
+<div class="pager">
+
+
+    <div class="course-container">
+        <form [formGroup]="searchForm">
+            <input type="text" pInputText placeholder="Course Name" formControlName="name" />
+
+
+            <p-dropdown [options]="sortValues" formControlName="sort" />
+
+
+        </form>
+        <div class="courses" *ngIf="filteredCourses$ | async as courses">
+            <app-course-card *ngFor="let course of courses" [data]="course"></app-course-card>
+        </div>
+    </div>
+
+
+</div>

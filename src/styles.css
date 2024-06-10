@@ -22,6 +22,7 @@ body {
     background-color: #0D1224;
     font-family: 'Montserrat';
     font-size: var(--font-standart-size);
+    color: var(--light-text-color);
 
     a {
         cursor: pointer;
@@ -40,4 +41,10 @@ body {
 
 .p-c {
     color: var(--text-paragraph-color);
+}
+
+.pager {
+    max-width: 2000px;
+    margin: 0 auto 0 auto;
+    padding: 0 50px 0 50px;
 }

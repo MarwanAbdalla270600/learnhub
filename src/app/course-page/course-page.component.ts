@@ -3,8 +3,8 @@ import { CourseService } from '../general/services/course.service';
 import { CommonModule } from '@angular/common';
 import { CourseCardComponent } from '../general/components/course-card/course-card.component';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { Observable, combineLatest, map, startWith, switchMap, tap } from 'rxjs';
-import { Course } from '../general/models/course-card';
+import { combineLatest, map, startWith, switchMap } from 'rxjs';
+import { Course, CourseSortValues, } from '../general/models/course-card';
 import { DropdownModule } from 'primeng/dropdown';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
@@ -22,8 +22,8 @@ export class CoursePageComponent implements OnInit {
   private readonly fb = inject(FormBuilder);
 
   public readonly courses$ = this.courseService.getAllCourses();
-  public filteredCourses$: Observable<Course[]> = this.courses$;
-  public sortValues = ['Alphabet', 'Price', 'Duration'];
+  public filteredCourses$ = this.courses$;
+  public sortValues: CourseSortValues[] = [CourseSortValues.Title, CourseSortValues.Price, CourseSortValues.Duration];
 
   searchForm: FormGroup = this.fb.group({
     name: [''],
@@ -44,20 +44,20 @@ export class CoursePageComponent implements OnInit {
     );
   }
 
-  private compareCourses(a: Course, b: Course, sort: string): number {
+  private compareCourses(a: Course, b: Course, sort: CourseSortValues): number {
     switch (sort) {
-      case 'Alphabet':
+      case CourseSortValues.Title:
         return a.title.localeCompare(b.title);
-      case 'Price':
+      case CourseSortValues.Price:
         return a.price - b.price;
-      case 'Duration':
+      case CourseSortValues.Duration:
         return a.duration - b.duration;
       default:
         return 0;
     }
   }
 
-  private filterAndSortCourses(courses: Course[], name: string, sort: string): Course[] {
+  private filterAndSortCourses(courses: Course[], name: string, sort: CourseSortValues): Course[] {
     return courses
       .filter(course => course.title.toLowerCase().includes(name.toLowerCase()))
       .sort((a, b) => this.compareCourses(a, b, sort));

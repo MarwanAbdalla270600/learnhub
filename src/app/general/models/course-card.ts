@@ -6,3 +6,9 @@ export interface Course {
     duration: number;
     price: number;
 }
+
+export enum CourseSortValues {
+    Title = "Title",
+    Price = "Price",
+    Duration = "Duration"
+}

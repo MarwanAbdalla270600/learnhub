@@ -28,35 +28,7 @@ export class LandingPageComponent implements OnInit {
   );
 
 
-  public headerNavLinks: NavigationItem[] = [
-    {
-      name: 'Subscribe',
-      url: '/'
-    },
-    {
-      name: 'Courses',
-      url: '/'
-    },
-    {
-      name: 'Forum',
-      url: '/'
-    },
-    {
-      name: 'Contact',
-      url: '/'
-    }
-  ]
 
-  public footerNavLinks: NavigationItem[] = [
-    {
-      name: 'Terms of Use',
-      url: '/'
-    },
-    {
-      name: 'Privacy Policy',
-      url: '/'
-    }
-  ]
 
   ngOnInit(): void {
     this.courses$.subscribe(x => console.log(x));

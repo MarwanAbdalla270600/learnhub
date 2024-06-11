@@ -12,7 +12,7 @@ export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), importProvidersFrom(BrowserAnimationsModule)
     , provideRouter(routes), provideClientHydration(), provideHttpClient(withFetch()), provideTransloco({
       config: {
-        availableLangs: ['en', 'de', 'ar'],
+        availableLangs: ['en', 'ar'],
         defaultLang: 'en',
         // Remove this option if your application doesn't support changing language in runtime.
         reRenderOnLangChange: true,

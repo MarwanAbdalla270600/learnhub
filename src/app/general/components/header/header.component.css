@@ -1,0 +1,17 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    .logo {
+        font-size: var(--font-logo-size);
+    }
+
+    .navigation {
+        a {
+            margin: 0 10px 0 10px;
+        }
+    }
+
+}

@@ -1,17 +1,6 @@
-<div class="landing-page pager">
-    <header class="header">
+<div class="landing-page pager" *transloco="let t">
 
-        <div class="logo">
-            {{logo}}
-        </div>
-
-        <nav class="navigation">
-            @for (item of headerNavLinks; track $index) {
-            <a>{{item.name}}</a>
-            }
-
-        </nav>
-    </header>
+    <app-header [navigations]="headerNavLinks"></app-header>
 
     <section class="hero-section">
         <div class="hero-left">
@@ -69,13 +58,7 @@
 
     </section>
 
-    <footer class="footer">
-        <nav class="navigation">
-            @for (item of footerNavLinks; track $index) {
-            <a>{{item.name}}</a>
-            }
-        </nav>
+    <app-footer [navigations]="footerNavLinks"></app-footer>
 
-    </footer>
 
 </div>

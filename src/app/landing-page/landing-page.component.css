@@ -1,15 +1,4 @@
 .landing-page {
-    .header {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        padding: 20px;
-
-        .logo {
-            font-size: var(--font-logo-size);
-        }
-
-    }
 
     .button {
         margin-top: 30px;
@@ -79,23 +68,6 @@
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 2rem;
 
-        }
-    }
-
-
-
-
-    .footer {
-        width: 100%;
-        margin-top: 100px;
-        padding: 20px;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .navigation {
-        a {
-            margin: 0 10px 0 10px;
         }
     }
 }

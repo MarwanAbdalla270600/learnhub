@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+
+    .navigation {
+        a {
+            margin: 0 10px 0 10px;
+        }
+    }
+}

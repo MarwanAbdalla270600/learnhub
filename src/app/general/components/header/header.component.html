@@ -1,0 +1,13 @@
+<header class="header" *transloco="let t">
+
+    <div class="logo">
+        {{t('app.appName')}}
+    </div>
+
+    <nav class="navigation">
+        @for (item of navigations; track $index) {
+        <a>{{item.name}}</a>
+        }
+
+    </nav>
+</header>

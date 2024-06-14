@@ -1,13 +1,16 @@
 <header class="header" *transloco="let t">
-
-    <div class="logo">
-        {{t('app.appName')}}
-    </div>
+    <h1>LearnHub</h1>
 
     <nav class="navigation">
-        @for (item of navigations; track $index) {
-        <a>{{item.name}}</a>
-        }
-
+        <a class="link" *ngFor="let link of navigations">
+            {{link.name}}
+        </a>
     </nav>
+
+    <div class="authentification">
+        <a class="login-button">Login</a>
+        <a class="register-button">Register</a>
+    </div>
+
+
 </header>

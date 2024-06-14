@@ -1,13 +1,35 @@
 .footer {
+    background: linear-gradient(90deg, var(--dark-color), #3d281f, var(--dark-color));
     width: 100%;
-    margin-top: 100px;
     padding: 20px;
-    display: flex;
-    justify-content: space-around;
 
-    .navigation {
-        a {
-            margin: 0 10px 0 10px;
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 10px auto 10px auto;
+        align-items: center;
+        gap: 32px;
+
+        h1 {
+            margin: 0;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 32px;
+            color: var(--primary-color);
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+
+        .navigation {
+            display: flex;
+            gap: 32px;
         }
     }
+
+
 }

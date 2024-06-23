@@ -1,8 +1,13 @@
 {
     "app": {
-        "appName": "learnhub", 
-        "landing" : {
-
+        "appName": "learnhub",
+        "landing": {
+            "hero": {
+                "subheadline": "Master new skills",
+                "headline": "Learn at your own pace with new content uploaded weekly",
+                "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque proin eget mi praesent blandit. A est viverra elit turpis ut purus.",
+                "button": "Get Started!"
+            }
         }
     }
 }

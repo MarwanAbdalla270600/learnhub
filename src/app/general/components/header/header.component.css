@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 20px 0px 20px 0px;
 
     .navigation {
         display: flex;
@@ -14,21 +14,5 @@
     .authentification {
         display: flex;
         gap: 8px;
-
-        a {
-            padding: 18px 34px;
-            border: 1px solid;
-            border-radius: 12px;
-            border-color: var(--primary-color);
-        }
-
-        .login-button {
-            color: var(--primary-color);
-        }
-
-        .register-button {
-            color: var(--dark-color);
-            background-color: var(--primary-color);
-        }
     }
 }

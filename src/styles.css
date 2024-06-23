@@ -22,10 +22,44 @@ body {
     color: var(--headline-color);
     font-size: medium;
 
+    h1 {
+        font-size: 44px;
+        line-height: 80px;
+        margin: 0px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin: 0px;
+    }
+
     a {
         cursor: pointer;
     }
 }
 
 
+/* global classes */
+
+.primary-button {
+    color: var(--dark-color);
+    background-color: var(--primary-color);
+    padding: 18px 34px;
+    border: 1px solid;
+    border-radius: 12px;
+    border-color: var(--primary-color);
+}
+
+.secondary-button {
+    color: var(--primary-color);
+    padding: 18px 34px;
+    border: 1px solid;
+    border-radius: 12px;
+    border-color: var(--primary-color);
+}
+
 /* utility classes */
+
+.primary-color {
+    color: var(--primary-color);
+}

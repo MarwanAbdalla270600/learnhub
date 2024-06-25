@@ -2,9 +2,13 @@
 
 
     <div class="course-container">
-        <form [formGroup]="searchForm">
-            <input type="text" pInputText placeholder="Course Name" formControlName="name" />
-            <p-dropdown [options]="sortValues" formControlName="sort" />
+        <form class="form" [formGroup]="searchForm">
+            <div><a>HOME</a> > <a class="primary-color">COURSES</a></div>
+            <h1>Explore our Courses</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque proin eget mi praesent blandit. A est viverra elit
+                turpis ut purus. </p>
+            <input type="text" pInputText placeholder="Search for Course name..." formControlName="name" />
+            <!--<p-dropdown [options]="sortValues" formControlName="sort" />-->
         </form>
         <div class="courses" *ngIf="filteredCourses$ | async as courses">
             <app-course-card *ngFor="let course of courses" [data]="course"></app-course-card>

@@ -27,9 +27,6 @@ export class LandingPageComponent implements OnInit {
     map(courses => courses.slice(-6)) // Get the last 6 elements
   );
 
-
-
-
   ngOnInit(): void {
     this.courses$.subscribe(x => console.log(x));
   }

@@ -7,6 +7,11 @@
                 "headline": "Learn at your own pace with new content uploaded weekly",
                 "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque proin eget mi praesent blandit. A est viverra elit turpis ut purus.",
                 "button": "Get Started!"
+            },
+            "about": {
+                "subheadline": "Hello",
+                "headline": "My name is Ahmed",
+                "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque proin eget mi praesent blandit. A est viverra elit turpis ut purus. Nibh diam phasellus diam odio ornare praesent adipiscing. Justo tincidunt orci at nunc ornare ut sit."
             }
         }
     }

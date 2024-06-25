@@ -35,6 +35,14 @@ body {
 
     a {
         cursor: pointer;
+        text-decoration: none;
+        color: var(--headline-color);
+    }
+
+    p {
+        margin: 0;
+        line-height: 30px;
+        color: var(--text-color);
     }
 }
 

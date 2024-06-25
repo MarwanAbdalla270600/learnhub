@@ -21,7 +21,7 @@ export class AppComponent {
     },
     {
       name: 'Courses',
-      url: '/'
+      url: '/courses'
     },
     {
       name: 'Forum',

@@ -1,11 +1,35 @@
 .course-container {
-
     padding-top: 20px;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+
+        p {
+            width: 500px;
+        }
+
+        input {
+            width: 700px;
+            height: 60px;
+            border-radius: 200px;
+            background-color: transparent;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            padding: 0 30px;
+        }
+
+    }
+
 
     .courses {
         padding-top: 50px;
         display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 2rem;
         margin-left: auto;
         margin-right: auto;
